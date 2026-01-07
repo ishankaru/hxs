@@ -8,6 +8,18 @@ import Link from "next/link"
 import SiteHeader from "@/components/site-header"
 import SiteFooter from "@/components/site-footer"
 
+export function generateStaticParams() {
+  return [
+    { slug: "hotel-conversion-lessons-learned" },
+    { slug: "federal-guidelines-2025" },
+    { slug: "staffing-strategies" },
+    { slug: "technology-integration" },
+    { slug: "cost-benefit-analysis" },
+    { slug: "community-partnerships" },
+    { slug: "infection-control" },
+  ]
+}
+
 export default function BlogPostPage() {
   // In a real implementation, you'd fetch this data based on the slug
   const post = {
